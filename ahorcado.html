@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ahorcado</title>
+  <link rel="stylesheet" href="ahorcado.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <header>
+    <img src="Vector.png" alt="" id="logo">
+  </header>
+  <main>
+
+      <section id="inicio">
+
+        <button id="iniciar">Iniciar Juego</button>
+        <button id="agregar">Agregar nueva palabra</button>
+
+      </section>
+
+      <section id="ingresopalabra" class="invisible">
+
+        <div class="ingreso">
+          <textarea id="entrada" placeholder="Ingrese palabra aqui"></textarea>
+        </div>
+        
+        <div class="botonera">
+          <p>Máx. de 8 letras</p>
+          <button id="guardar">Guardar y empezar</button>
+          <button id="cancelar">Cancelar</button>
+        </div>
+
+      </section>
+
+      <section id="jugar" class="invisible">
+
+        <canvas id="dibujo"></canvas>
+        <div id="palabra"></div>
+        <div id="fallos"></div>
+        
+        <div class="botonera">
+          <button id="nuevo">Nuevo Juego</button>
+          <button id="desistir">Desistir</button>
+        </div>
+        <div id="cartel"></div>
+      </section>
+
+  </main>
+
+  <footer>
+    <p>Alura challenge / Dev Jorge Robinson</p>
+  </footer>
+  
+</body>
+<script src="ahorcado.js"></script>
+</html>
